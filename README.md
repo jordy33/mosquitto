@@ -1,8 +1,8 @@
 ## Mosquito config ##
 
-sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
-sudo apt-get update
-sudo apt-get install mosquitto
+* sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+* sudo apt-get update
+* sudo apt-get install mosquitto
 * cd /etc/mosquitto
 * cp /etc/mosquitto/mosquitto.conf.example ./mosquitto.conf
 * /usr/share/doc/mosquitto/examples/mosquitto.conf.example
