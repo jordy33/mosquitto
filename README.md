@@ -17,5 +17,5 @@
 * sudo mosquitto -c /etc/mosquitto/mosquitto.conf
 * sudo mosquitto -d
 * apt install mosquitto-clients
-* mosquitto_sub -d -t hello/world -u dwim -p gpscontrol1mosquitto_sub -d -t hello/world -u dwim -p gpscontrol1
+* mosquitto_sub -d -t hello/world -u dwim -P gpscontrol1
 * ufw allow 1883
