@@ -8,11 +8,14 @@
 * /usr/share/doc/mosquitto/examples/mosquitto.conf.example
 * vim mosquitto.conf
 * allow_anonymous false
-* password_file mosquitto.pwd
+* password_file /etc/mosquitto/mosquitto.pwd
 * save changes on mosquitto.conf
 * create user:
-* sudo mosquitto_passwd -c mosquitto.pwd username (pick one)
+* To create dwim user:
+* sudo mosquitto_passwd -c mosquitto.pwd dwim 
 * You'll be prompted for the password
-* change : password_file mosquitto.pwd
 * sudo mosquitto -c /etc/mosquitto/mosquitto.conf
 * sudo mosquitto -d
+* apt install mosquitto-clients
+* mosquitto_sub -d -t hello/world -u dwim -p gpscontrol1mosquitto_sub -d -t hello/world -u dwim -p gpscontrol1
+* ufw allow 1883
