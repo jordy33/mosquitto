@@ -19,3 +19,8 @@
 * apt install mosquitto-clients
 * mosquitto_sub -d -t hello/world -u dwim -P gpscontrol1
 * ufw allow 1883
+listener 1883  
+protocol mqtt  
+listener 9001  
+protocol websockets  
+* sudo service mosquitto restart
