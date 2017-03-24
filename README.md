@@ -24,3 +24,11 @@ protocol mqtt
 listener 9001  
 protocol websockets  
 * sudo service mosquitto restart
+
+ wget http://mosquitto.org/files/source/mosquitto-1.4.11.tar.gz  
+ tar -zxvf mosquitto-1.4.11.tar.gz  
+ cd mosquitto-1.4.11  
+   // in file config.mk set:   WITH_WEBSOCKETS:=yes  
+ make  
+ make install  
+ 
