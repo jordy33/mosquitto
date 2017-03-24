@@ -31,4 +31,6 @@ protocol websockets
    // in file config.mk set:   WITH_WEBSOCKETS:=yes  
  make  
  make install  
+ mosquitto -v -c /etc/mosquitto/mosquitto.conf  
+ 
  
