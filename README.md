@@ -32,5 +32,9 @@ protocol websockets
  make  
  make install  
  mosquitto -v -c /etc/mosquitto/mosquitto.conf  
+ Running daemon
+ mosquitto -v -c -d /etc/mosquitto/mosquitto.conf  
+ 
+ 
  
  
