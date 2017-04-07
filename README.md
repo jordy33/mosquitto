@@ -33,7 +33,7 @@ protocol websockets
  make install  
  mosquitto -v -c /etc/mosquitto/mosquitto.conf  
  Running daemon
- mosquitto -v -c -d /etc/mosquitto/mosquitto.conf  
+ mosquitto -d -v -c /etc/mosquitto/mosquitto.conf  
  
  
  
