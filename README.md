@@ -52,9 +52,10 @@ mosquitto_pub -h localhost -t "test" -m "hello world" -u "sammy" -P "password"
 
 `sudo nano /etc/mosquitto/conf.d/default.conf`
 
-Add the following lines:
+Add the following lines and restart mosquitto:
 
 ```
+listener 1883
 listener 8080
 protocol websockets
 ```
