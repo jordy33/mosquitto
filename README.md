@@ -55,7 +55,13 @@ mosquitto_pub -h localhost -t "test" -m "hello world" -u "sammy" -P "password"
 Add the following lines and restart mosquitto:
 
 ```
+allow_anonymous false
+password_file /etc/mosquitto/passwd
 listener 1883
-listener 8080
+listener 8000
 protocol websockets
+#log_timestamp = false
+#connection_messages = false
+log_dest  none
+#log_type  error
 ```
